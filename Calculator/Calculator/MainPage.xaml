@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Calculator.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#B26242" Padding="20,10,20,10" Margin="0,10,0,30" CornerRadius="20">
+            <Label Text="CALCULADORA" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry HorizontalTextAlignment="Center" x:Name="txtnum" Placeholder="VALOR 1" Keyboard="Numeric" FontSize="30"></Entry>
+        <Entry HorizontalTextAlignment="Center" x:Name="txtnum2" Placeholder="VALOR 2" Keyboard="Numeric" FontSize="30"></Entry>
+
+        <Button TextColor="White" BackgroundColor="LightSlateGray" CornerRadius="20" FontSize="Medium" 
+                FontFamily="CALIBRI" Text="+ SUMAR" x:Name="btnsuma" Clicked="btnsuma_Clicked"></Button>
+        <Button CornerRadius="20" FontSize="Medium" FontFamily="CALIBRI" Text="- RESTAR" x:Name="btnresta" 
+                Clicked="btnresta_Clicked"></Button>
+        <Button TextColor="White" BackgroundColor="LightSlateGray" CornerRadius="20" FontSize="Medium" 
+                FontFamily="CALIBRI" Text="X MULTIPLICAR" x:Name="btnmulti" Clicked="btnmulti_Clicked"></Button>
+        <Button CornerRadius="20" FontSize="Medium" FontFamily="CALIBRI" Text="/ DIVIDIR" x:Name="btndiv" 
+                Clicked="btndiv_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
